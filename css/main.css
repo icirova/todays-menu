@@ -1,0 +1,16 @@
+.header {
+  background-image: linear-gradient(to bottom, orange, white);
+}
+.header__container {
+  display: flex;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=main.css.map */

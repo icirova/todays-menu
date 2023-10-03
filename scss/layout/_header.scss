@@ -1,2 +1,11 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
+
+.header {
+    background-image: linear-gradient(to bottom, orange, white);
+
+    &__container {
+        display: flex;
+
+    }
+}

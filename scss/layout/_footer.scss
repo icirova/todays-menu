@@ -2,7 +2,11 @@
 @use '../abstracts/mixins';
 
 .footer {
+    height: 100px;
     background-image: linear-gradient(to top, orange, white);
+    display: grid;
+    place-content: center;
     @include mixins.padding;
-    text-align: center;
+   
+    
 }

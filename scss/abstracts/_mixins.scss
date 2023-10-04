@@ -13,6 +13,8 @@
 }
 
 @mixin button {
+    display: block;
+    width: 100px;
     border: 0;
     background-color: variables.$color-primary;
     font-family: variables.$subtitle-font;

@@ -5,4 +5,12 @@
     @include mixins.padding-2dim;
     @include mixins.button;
    
+   
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+
+    
 }
+

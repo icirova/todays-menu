@@ -1,0 +1,12 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.section__title {
+    text-align: center;
+    font-size: 3rem;
+    @include mixins.margin-bottom;
+}
+
+.buttons {
+    @include mixins.margin-bottom;
+}

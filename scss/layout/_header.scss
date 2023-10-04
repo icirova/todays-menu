@@ -7,10 +7,7 @@
     @include mixins.padding;
 
     
-    &__text {
-        text-align: center;
-    }
-
+    
     &__description {
         @include mixins.margin-bottom;
         font-family: variables.$subtitle-font;

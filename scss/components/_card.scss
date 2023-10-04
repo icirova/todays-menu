@@ -20,10 +20,32 @@
             margin: 0 variables.$spacer
         };
     }
+
+    &--recipes {
+
+        margin-right: variables.$spacer;
+
+        @include mixins.display-med{
+            &:nth-child(4n+4) {
+                margin-right: 0;
+            }
+        }
+
+        @include mixins.display-lg {
+            &:nth-child(6n+6) {
+                margin-right: 0
+            }
+        }
+
+       
+
+       
+    }
     
     &__title {
         text-align: center;
         @include mixins.margin-bottom;
+       
     } 
 
     &__content {
@@ -47,6 +69,23 @@
         font-family: variables.$subtitle-font;
         color: variables.$color-primary;
         
+    }
+
+    &__img {
+       
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: variables.$mini-spacer;
+
+       
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       
     }
 
     

@@ -27,17 +27,12 @@
 }
 
 
-.section-grid {
+.section--grid {
     @include mixins.display-med {
         display: flex;
         flex-wrap: wrap;
     }
 
-    &--recipes {
-
-    }
-
-   
 }
 
 .card {
@@ -50,19 +45,7 @@
         flex-basis: calc((100% - (variables.$spacer * 2)) / 3);
     }
 
-    // &--recipes {
-
-       
-    //     @include mixins.display-med {
-    //         flex-basis: calc((100% - (variables.$spacer * 4)) / 4);
-    
-    //     }
-    
-    //     @include mixins.display-lg {
-    //         flex-basis: calc((100% - (variables.$spacer * 6)) / 6);
-           
-    //     }
-    // }
+   
 
     &__text {
         display: flex;

@@ -57,11 +57,12 @@
 }
 
 @media screen and (min-width: 680px) {
-  .section-grid {
+  .section--grid {
     display: flex;
     flex-wrap: wrap;
   }
 }
+
 @media screen and (min-width: 680px) {
   .card {
     flex-basis: calc((100% - 1.5rem) / 2);

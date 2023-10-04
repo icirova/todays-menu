@@ -1,0 +1,53 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.card {
+
+    @include mixins.margin-bottom;
+
+    @include mixins.display-med{
+        &:nth-child(odd) {
+            margin-right: variables.$spacer;
+        }
+    }
+
+    @include mixins.display-lg {
+        &:nth-child(odd) {
+            margin-right: 0;
+        }
+      
+        &:nth-child(3n+2) {
+            margin: 0 variables.$spacer
+        };
+    }
+    
+    &__title {
+        text-align: center;
+        @include mixins.margin-bottom;
+    } 
+
+    &__content {
+        border: 1px solid black;
+        @include mixins.padding;
+    }
+
+    &__text {
+        margin-bottom: variables.$half-spacer;
+
+        &--dinner {
+            margin-bottom: 0;
+        }
+    
+    }
+
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 1.1rem;
+        font-family: variables.$subtitle-font;
+        color: variables.$color-primary;
+        
+    }
+
+    
+}

@@ -2,10 +2,43 @@
 @use '../abstracts/mixins';
 
 .header {
+   
     background-image: linear-gradient(to bottom, orange, white);
+    @include mixins.padding;
 
-    &__container {
-        display: flex;
+    
+    &__text {
+        text-align: center;
+    }
 
+    &__description {
+        @include mixins.margin-bottom;
+        font-family: variables.$subtitle-font;
+        
+        @include mixins.display-lg {
+            font-size: 1.2rem;
+            
+           }
+    }
+
+    &__title {
+       @include mixins.margin-bottom;
+       font-size: 3rem;
+
+       @include mixins.display-lg {
+        font-size: 5rem;
+        
+       }
+    }
+
+    
+    &__image {
+        display: none;
+        @include mixins.display-med{
+            display: block;
+            width: 60%;
+            margin: 0 auto;
+            
+        }
     }
 }

@@ -1,1 +1,33 @@
 @use '../abstracts/variables';
+
+@mixin margin-bottom {
+    margin-bottom: variables.$spacer;
+}
+
+@mixin padding {
+    padding: 15px;
+}
+
+@mixin padding-2dim {
+    padding: 10px 15px;
+}
+
+@mixin button {
+    border: 0;
+    background-color: variables.$color-primary;
+    font-family: variables.$subtitle-font;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@mixin display-lg {
+    @media screen and (min-width: variables.$screen-lg) {
+        @content;
+    }
+}
+
+@mixin display-med {
+    @media screen and (min-width: variables.$screen-med) {
+        @content;
+    }
+}

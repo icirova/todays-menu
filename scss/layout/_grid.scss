@@ -1,2 +1,70 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
+
+
+.header {
+    &__container {
+        @include mixins.display-med{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__text {
+       flex-basis: 50%;
+       
+    }
+
+    &__img {
+        flex-basis: 50%;
+        
+    }
+}
+
+
+.section--planner {
+    @include mixins.display-med {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+   
+}
+
+.card {
+    @include mixins.display-med {
+        flex-basis: calc((100% - variables.$spacer) / 2);
+
+    }
+
+    @include mixins.display-lg {
+        flex-basis: calc((100% - (variables.$spacer * 2)) / 3);
+    }
+
+    &__text {
+        display: flex;
+    }
+
+    &__subtitle {
+        flex-basis: 25%;
+    }
+
+    &_description {
+        flex-basis: 75%;
+    }
+
+    
+    &--shopping-list {
+        @include mixins.display-med {
+            flex-basis: 100%;
+        }
+
+        @include mixins.display-lg {
+            flex-basis: calc((100% - (variables.$spacer * 2)) / 3);
+        }
+    }
+}
+
+
+

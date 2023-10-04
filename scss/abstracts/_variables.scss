@@ -1,0 +1,35 @@
+
+
+//barvy
+$color-primary: rgb(255, 140, 0);
+$color-secondary: rgb(120, 18, 18);
+$color-complementary:rgb(56, 90, 1) ;
+
+
+//barvy s průhledností
+$color-primary-op:rgba(225, 140, 0, 0.8);
+
+
+//fonty
+$default-font: 'Open Sans', sans-serif;
+$title-font: 'Amatic SC', cursive;
+$subtitle-font:'Sorts Mill Goudy', serif;
+
+
+
+//velikosti fontů
+$font-sm: 100%;  //16px
+$font-med: 150%;  //24px
+$font-lg: 200%;  //32px
+
+
+//rozměry
+$spacer: 1.5rem; //24px
+$double-spacer: $spacer * 2;
+$triple-spacer: $spacer * 3;
+$half-spacer: $spacer / 2;
+$mini-spacer: $spacer / 3;
+
+//breakpointy pro Media Queries
+$screen-med: 680px;
+$screen-lg: 1024px;

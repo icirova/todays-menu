@@ -1,8 +1,94 @@
 .header {
   background-image: linear-gradient(to bottom, orange, white);
+  padding: 15px;
 }
-.header__container {
+.header__text {
+  text-align: center;
+}
+.header__description {
+  margin-bottom: 1.5rem;
+  font-family: "Sorts Mill Goudy", serif;
+}
+@media screen and (min-width: 1024px) {
+  .header__description {
+    font-size: 1.2rem;
+  }
+}
+.header__title {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+@media screen and (min-width: 1024px) {
+  .header__title {
+    font-size: 5rem;
+  }
+}
+.header__image {
+  display: none;
+}
+@media screen and (min-width: 680px) {
+  .header__image {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.footer {
+  background-image: linear-gradient(to top, orange, white);
+  padding: 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 680px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header__text {
+  flex-basis: 50%;
+}
+.header__img {
+  flex-basis: 50%;
+}
+
+@media screen and (min-width: 680px) {
+  .section--planner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .card {
+    flex-basis: calc((100% - 1.5rem) / 2);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    flex-basis: calc((100% - 3rem) / 3);
+  }
+}
+.card__text {
   display: flex;
+}
+.card__subtitle {
+  flex-basis: 25%;
+}
+.card_description {
+  flex-basis: 75%;
+}
+@media screen and (min-width: 680px) {
+  .card--shopping-list {
+    flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card--shopping-list {
+    flex-basis: calc((100% - 3rem) / 3);
+  }
 }
 
 html {
@@ -13,4 +99,63 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+}
+
+.section {
+  padding: 15px;
+}
+
+.button {
+  padding: 10px 15px;
+  border: 0;
+  background-color: rgb(255, 140, 0);
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 680px) {
+  .card:nth-child(odd) {
+    margin-right: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card:nth-child(odd) {
+    margin-right: 0;
+  }
+  .card:nth-child(3n+2) {
+    margin: 0 1.5rem;
+  }
+}
+.card__title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.card__content {
+  border: 1px solid black;
+  padding: 15px;
+}
+.card__text {
+  margin-bottom: 0.75rem;
+}
+.card__text--dinner {
+  margin-bottom: 0;
+}
+.card__subtitle {
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: "Sorts Mill Goudy", serif;
+  color: rgb(255, 140, 0);
 }/*# sourceMappingURL=main.css.map */

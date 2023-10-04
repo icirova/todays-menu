@@ -1,2 +1,8 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
+
+.footer {
+    background-image: linear-gradient(to top, orange, white);
+    @include mixins.padding;
+    text-align: center;
+}

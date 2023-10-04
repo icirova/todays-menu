@@ -1,2 +1,8 @@
 @use '../abstracts/variables';
 @use '../abstracts/mixins';
+
+.button {
+    @include mixins.padding-2dim;
+    @include mixins.button;
+   
+}

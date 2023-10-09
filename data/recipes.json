@@ -1,0 +1,105 @@
+[
+    {
+        "id": 1,
+        "photo_url": "/images/recipes/dynova-polevka.webp",
+        "id_ingredients": [
+            1,
+            5
+        ],
+        "title": "Dýňová polévka",
+        "workflow": "Uvař dýni."
+    },
+
+    {
+        "id": 2,
+        "photo_url": "/images/recipes/livance.webp",
+        "id_ingredients": [
+            2,
+            3,
+            4,
+            5
+            
+        ],
+        "title": "Lívance",
+        "workflow": "Připrav těsto a na oleji smaž lívance."
+    },
+
+    {
+        "id": 3,
+        "photo_url": "/images/recipes/pizza.webp",
+        "id_ingredients": [
+            2,
+            4,
+            5
+        ],
+        "title": "Pizza",
+        "workflow": "Objednej pizzu s dovozem."
+    },
+
+    {
+        "id": 4,
+        "photo_url": "/images/recipes/salat.webp",
+        "id_ingredients": [
+            6
+        ],
+        "title": "Zeleninový salát",
+        "workflow": "Natrhej salát."
+    },
+
+    {
+        "id": 5,
+        "photo_url": "/images/recipes/carbonara.webp",
+        "id_ingredients": [
+            5
+        ],
+        "title": "Špagety carbonara",
+        "workflow": "Vychutnej si skvělé špagety."
+    },
+    {
+        "id": 6,
+        "photo_url": "/images/recipes/bolonske.webp",
+        "id_ingredients": [
+            5
+        ],
+        "title": "Boloňské špagety",
+        "workflow": "Vychutnej si skvělé špagety."
+    },
+    {
+        "id": 7,
+        "photo_url": "/images/recipes/makronky.webp",
+        "id_ingredients": [
+            2,
+            3,
+            4,
+            5
+            
+        ],
+        "title": "Makronky",
+        "workflow": "Připrav těsto a peč makronky."
+    },
+
+    {
+        "id": 8,
+        "photo_url": "/images/recipes/smazeny-rizek.webp",
+        "id_ingredients": [
+            2,
+            5
+            
+        ],
+        "title": "Smažený řízek",
+        "workflow": "Naklepej a obal."
+    },
+    {
+        "id": 9,
+        "photo_url": "/images/recipes/rizek-hranolky.webp",
+        "id_ingredients": [
+            2,
+            5
+            
+        ],
+        "title": "Přírodní řízek s hranolkami",
+        "workflow": "Naklepej a sněz."
+    }
+
+
+]

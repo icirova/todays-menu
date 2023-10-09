@@ -6,6 +6,8 @@ html { box-sizing: border-box; }
 
 body {
     font-family: variables.$default-font;
+
+    
 }
 
 h1, h2, h3 {
@@ -15,4 +17,11 @@ h1, h2, h3 {
 
 .section {
     @include mixins.padding;
+}
+
+.main {
+    @include mixins.display-lg {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
 }

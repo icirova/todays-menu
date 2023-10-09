@@ -7,7 +7,13 @@
     @include mixins.padding;
 
     
-    
+    &__container {
+        @include mixins.display-lg {
+            max-width: 80vw;
+            margin: 0 auto;
+        }
+    }
+
     &__description {
         @include mixins.margin-bottom;
         font-family: variables.$subtitle-font;
@@ -23,7 +29,7 @@
        font-size: 3rem;
 
        @include mixins.display-lg {
-        font-size: 5rem;
+        font-size: 6rem;
         
        }
     }

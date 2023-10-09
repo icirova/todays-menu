@@ -2,6 +2,12 @@
   background-image: linear-gradient(to bottom, orange, white);
   padding: 15px;
 }
+@media screen and (min-width: 1024px) {
+  .header__container {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
 .header__description {
   margin-bottom: 1.5rem;
   font-family: "Sorts Mill Goudy", serif;
@@ -17,7 +23,7 @@
 }
 @media screen and (min-width: 1024px) {
   .header__title {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
 .header__image {
@@ -123,6 +129,13 @@ h1, h2, h3 {
   padding: 15px;
 }
 
+@media screen and (min-width: 1024px) {
+  .main {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
+
 .button {
   padding: 10px 15px;
   display: block;
@@ -154,19 +167,6 @@ h1, h2, h3 {
     margin: 0 1.5rem;
   }
 }
-.card--recipes {
-  margin-right: 1.5rem;
-}
-@media screen and (min-width: 680px) {
-  .card--recipes:nth-child(4n+4) {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .card--recipes:nth-child(6n+6) {
-    margin-right: 0;
-  }
-}
 .card__title {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -181,14 +181,20 @@ h1, h2, h3 {
 .card__text--dinner {
   margin-bottom: 0;
 }
+.card__text--recipes {
+  display: block;
+}
 .card__subtitle {
   font-weight: 700;
   font-size: 1.1rem;
   font-family: "Sorts Mill Goudy", serif;
   color: rgb(255, 140, 0);
 }
+.card__description {
+  margin-left: 8px;
+}
 .card__img {
-  height: 200px;
+  height: 300px;
   overflow: hidden;
   margin-bottom: 0.5rem;
 }
@@ -199,13 +205,60 @@ h1, h2, h3 {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.card--active {
+  padding: 1.5rem;
+  width: 80vw;
+  height: auto;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+@media screen and (min-width: 680px) {
+  .card--active {
+    width: 60vw;
+  }
+}
+.card__description--recipes {
+  margin-bottom: 1.5rem;
+}
+.card :hover {
+  cursor: pointer;
+}
+
+.card--active .card__img {
+  height: 150px;
+}
+@media screen and (min-width: 680px) {
+  .card--active .card__img {
+    height: 300px;
+  }
+}
 
 .section__title {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1.5rem;
 }
+@media screen and (min-width: 1024px) {
+  .section__title {
+    font-size: 5rem;
+  }
+}
 
 .buttons {
   margin-bottom: 1.5rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

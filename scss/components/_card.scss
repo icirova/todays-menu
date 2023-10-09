@@ -21,26 +21,6 @@
         };
     }
 
-    &--recipes {
-
-        margin-right: variables.$spacer;
-
-        @include mixins.display-med{
-            &:nth-child(4n+4) {
-                margin-right: 0;
-            }
-        }
-
-        @include mixins.display-lg {
-            &:nth-child(6n+6) {
-                margin-right: 0
-            }
-        }
-
-       
-
-       
-    }
     
     &__title {
         text-align: center;
@@ -54,10 +34,17 @@
     }
 
     &__text {
+
         margin-bottom: variables.$half-spacer;
 
         &--dinner {
             margin-bottom: 0;
+        }
+
+        //rozložení textu ve zvětšené kartičce
+        &--recipes {
+            display: block;
+           
         }
     
     }
@@ -71,11 +58,17 @@
         
     }
 
+    &__description {
+        margin-left: 8px;
+    }
+
     &__img {
        
-        height: 200px;
+        height: 300px;
         overflow: hidden;
         margin-bottom: variables.$mini-spacer;
+
+       
 
        
     }
@@ -88,5 +81,46 @@
        
     }
 
+    //styly zvětšené kartičky
+
+    &--active {
+        padding: variables.$spacer;
+        width: 80vw;
+        height: auto;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        @include mixins.display-med {
+            width: 60vw;
+        }
+        
+    
+
+    }
+
+    //padding zvětšené kartičky
+
+    &__description--recipes {
+        @include mixins.margin-bottom;
+    }
+
+    :hover {
+        cursor: pointer;
+    }
+
     
 }
+
+//velikost obrázku zvětšené kartičky
+
+.card--active .card__img {
+    height: 150px;
+
+    @include mixins.display-med {
+        height: 300px;
+    }
+}  

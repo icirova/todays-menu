@@ -1,9 +1,10 @@
 ---
 layout: layouts/main-template.njk
 title: Recepty
+script: recipes.js
 ---
 
-<div class="section section--recipes">
+<div class="section">
 
     <h1 class="section__title">Recepty</h1>
 
@@ -15,109 +16,12 @@ title: Recepty
         <button class="button"><a class="button__link" href="#">Moučníky</a></button>
    </div>
 
-<div class="section--grid ">
+    <div class="section__recipes section--grid"></div>
 
-    <div class="card card--recipes">
 
-       
-        <div class="card__img">
-           <img class="card__image" src="/images/recipes/dynova-polevka.webp" alt="">
-        </div>
-        <h1 class="card__title">Dýňová polévka</h1>
 
-    </div>
 
-    <div class="card card--recipes">
 
-       
-        <div class="card__img">
-           <img class="card__image" src="/images/recipes/livance.webp" alt="">
-        </div>
-        <h1 class="card__title">Lívance</h1>
-
-    </div>
-
-    <div class="card card--recipes">
-
-      
-        <div class="card__img">
-           <img class="card__image" src="/images/recipes/pizza.webp" alt="">
-        </div>
-        <h1 class="card__title">Pizza</h1>
-
-    </div>
-
-    <div class="card card--recipes">
-
-        <div class="card__img">
-           <img class="card__image" src="/images/recipes/salat.webp" alt="">
-        </div>
-        <h1 class="card__title">Zeleninový salát</h1>
-
-    </div>
-
-    <div class="card card--recipes">
-        
-        <div class="card__img">
-           <img class="card__image" src="/images/recipes/rizek-hranolky.webp" alt="">
-        </div>
-        <h1 class="card__title">přírodní řízek s hranolkami</h1>
-
-    </div>
-
-    <div class="card card--recipes">
-        
-        <div class="card__img">
-           <img class="card__image" src="/images/recipes/smazeny-rizek.webp" alt="">
-        </div>
-        <h1 class="card__title">Smažený řízek</h1>
-
-    </div>
-
-    <div class="card card--recipes">
-        
-        <div class="card__img">
-           <img class="card__image" src="/images/recipes/makronky.webp" alt="">
-        </div>
-        <h1 class="card__title">Makronky</h1>
-
-    </div>
-
-    <div class="card card--recipes">
-        
-        <div class="card__img">
-           <img class="card__image" src="/images/recipes/carbonara.webp" alt="">
-        </div>
-        <h1 class="card__title">špagety carbonara</h1>
-
-    </div>
-
-    <div class="card card--recipes">
-        
-        <div class="card__img">
-           <img class="card__image" src="/images/recipes/bolonske.webp" alt="">
-        </div>
-        <h1 class="card__title">špagety boloňské</h1>
-
-    </div>
-
-    <div class="card card--recipes">
-        
-        <div class="card__img">
-           <img class="card__image" src="/images/recipes/tvarohove-knedliky.webp" alt="">
-        </div>
-        <h1 class="card__title">tvarohové knedlíky</h1>
-
-    </div>
-
-    <div class="card card--recipes">
-        
-        <div class="card__img">
-           <img class="card__image" src="/images/recipes/susi.webp" alt="">
-        </div>
-        <h1 class="card__title">suši</h1>
-
-    </div>
 
     <!-- <div class="card card--recipes card--active">
         <div class="card__img">
@@ -125,21 +29,18 @@ title: Recepty
          </div>
          <h1 class="card__title">suši</h1>
          <div class="card__text card__text--recipes">
-            <p class="card__subtitle">Suroviny</p>
-            <p class="card__description card__description--recipes">uvařená rýže, suši ocet, zelenina, řasa nori, uzený losos, sojová omáčka, nakládaný zázvor, wasabi pasta </p>
-            <p class="card__subtitle">Postup</p>
-            <p class="card__description">Položte nori řasu na bambusovou podložku. Rozetřete rýži na nori. Přidejte náplň (rybu nebo zeleninu). Zabalte do rolky a zastavte vodou. Krájejte na plátky. Podávejte s omáčkou a wasabi.</p>
+            <p class="card__subtitle card__subtitle--ingredients">Suroviny</p>
+            <p class="card__description card__description--recipes card__description--ingredients">uvařená rýže, suši ocet, zelenina, řasa nori, uzený losos, sojová omáčka, nakládaný zázvor, wasabi pasta </p>
+            <p class="card__subtitle card__subtitle--workflow">Postup</p>
+            <p class="card__description card__description--workflow">Položte nori řasu na bambusovou podložku. Rozetřete rýži na nori. Přidejte náplň (rybu nebo zeleninu). Zabalte do rolky a zastavte vodou. Krájejte na plátky. Podávejte s omáčkou a wasabi.</p>
         </div>
 
     </div> -->
 
+    
     <div class="overlay"></div>
 
     
 
    
 </div>
-
-</div>
-
-

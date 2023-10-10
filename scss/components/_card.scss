@@ -44,7 +44,7 @@
         //rozložení textu ve zvětšené kartičce
         &--recipes {
             display: block;
-           
+
         }
     
     }
@@ -92,11 +92,13 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 2;
+        z-index: 20;
 
         @include mixins.display-med {
             width: 60vw;
         }
+
+       
         
     
 

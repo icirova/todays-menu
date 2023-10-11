@@ -74,20 +74,21 @@ function createActiveCard (cardDivEl, textDivEl) {
     cardDivEl.classList.add('card--active');
     textDivEl.style.display = 'block';
 
-    // Výška a šířka viewportu
-    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    // // Výška a šířka viewportu
+     const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+     const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
 
-    // Výška a šířka aktivní karty
-    const cardWidth = cardDivEl.offsetWidth;
-    const cardHeight = cardDivEl.offsetHeight;
+    // // Výška a šířka aktivní karty
+     const cardWidth = cardDivEl.offsetWidth;
+     const cardHeight = cardDivEl.offsetHeight;
 
-    const leftPosition = (viewportWidth - cardWidth) / 2;
-    const topPosition = (viewportHeight - cardHeight) / 2;
-
+     const leftPosition = (viewportWidth - cardWidth) / 2;
+     const topPosition = (viewportHeight - cardHeight) / 2;
     
-
-    console.log(viewportHeight, viewportWidth, cardWidth, cardHeight)
+     cardDivEl.style.position = 'fixed';
+     cardDivEl.style.left = leftPosition + 'px';
+     cardDivEl.style.top = topPosition + 'px';
+    
 }
 
 function closeActiveCard () {
@@ -95,9 +96,14 @@ function closeActiveCard () {
 
     if (activeCard) {
         const textDiv = activeCard.querySelector('.card__text');
+        const ff = activeCard.querySelector('.card__img');
+
         textDiv.style.display = 'none';
         activeCard.classList.remove('card--active');
-        
+
+        activeCard.style.position = '';
+        activeCard.style.removeProperty('left') 
+        activeCard.style.removeProperty('top') 
     }
 
 }
@@ -106,4 +112,5 @@ const overlay = document.querySelector('.overlay');
 overlay.addEventListener('click', function () {
     closeActiveCard();
     overlay.style.display = 'none';
+
 });

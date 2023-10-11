@@ -125,6 +125,17 @@ h1, h2, h3 {
   font-weight: 400;
 }
 
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
 .section {
   padding: 15px;
 }
@@ -149,6 +160,9 @@ h1, h2, h3 {
 .button__link {
   text-decoration: none;
   color: black;
+}
+.button--new-recipe {
+  background-color: rgb(232, 60, 60);
 }
 
 .card {
@@ -211,9 +225,6 @@ h1, h2, h3 {
   height: auto;
   background-color: white;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 20;
 }
 @media screen and (min-width: 680px) {
@@ -234,17 +245,6 @@ h1, h2, h3 {
 @media screen and (min-width: 680px) {
   .card--active .card__img {
     height: 300px;
-  }
-}
-
-.section__title {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
-@media screen and (min-width: 1024px) {
-  .section__title {
-    font-size: 5rem;
   }
 }
 

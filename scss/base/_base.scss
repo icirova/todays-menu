@@ -15,6 +15,17 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    @include mixins.margin-bottom;
+
+    @include mixins.display-lg{
+        font-size: 5rem;
+    }
+}
+
 .section {
     @include mixins.padding;
 }

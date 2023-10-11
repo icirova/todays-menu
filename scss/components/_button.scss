@@ -13,9 +13,19 @@
 
     &--new-recipe {
         background-color: variables.$color-secondary;
-      
+    } 
+    
+    &:hover {
+        background-color: darken(variables.$color-primary, 20%);
+        color: white;
     }
 
-    
+    &:hover .button__link {
+        color: white;
+    }
+}
+
+.button--new-recipe:hover {
+    background-color: darken(variables.$color-secondary, 20%);
 }
 

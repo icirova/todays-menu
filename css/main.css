@@ -164,6 +164,17 @@ h1, h2, h3 {
 .button--new-recipe {
   background-color: rgb(232, 60, 60);
 }
+.button:hover {
+  background-color: #995400;
+  color: white;
+}
+.button:hover .button__link {
+  color: white;
+}
+
+.button--new-recipe:hover {
+  background-color: #aa1414;
+}
 
 .card {
   margin-bottom: 1.5rem;

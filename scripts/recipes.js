@@ -74,12 +74,8 @@ function createActiveCard (cardDivEl, textDivEl) {
         overlay.style.opacity = '1';
       });
 
-   
     cardDivEl.classList.add('card--active');
     textDivEl.style.display = 'block';
-
-
-   
 
     // // Výška a šířka viewportu
      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
@@ -115,10 +111,10 @@ function closeActiveCard () {
 
 }
 
+//zavření aktivní karty kliknutím na tmavé pozadí - overlay
 const overlay = document.querySelector('.overlay');
 overlay.addEventListener('click', function () {
     closeActiveCard();
     overlay.style.display = 'none';
     overlay.style.opacity = '0'
-
 });

@@ -69,31 +69,22 @@
         object-fit: cover;
     }
 
-    //styly zvětšené kartičky
+    //styly aktivní karty
 
     &--active {
         padding: variables.$spacer;
         width: 80vw;
         height: auto;
         background-color: white;
-        
         position: absolute;
         z-index: 20;
-        
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
        
         @include mixins.display-med {
             width: 60vw;
         }
-
-
-
-
     }
 
-    //padding zvětšené kartičky
+    //padding aktivní karty
 
     &__description--recipes {
         @include mixins.margin-bottom;
@@ -104,7 +95,7 @@
     }  
 }
 
-//velikost obrázku zvětšené kartičky
+//velikost obrázku aktivní karty
 
 .card--active .card__img {
     height: 150px;

@@ -68,11 +68,18 @@ recipesCards.forEach((recipe) => {
 function createActiveCard (cardDivEl, textDivEl) {
 
     const overlay = document.querySelector('.overlay');
-    overlay.style.display = 'block'
-   
+    overlay.style.display = 'block';
 
+    requestAnimationFrame(() => {
+        overlay.style.opacity = '1';
+      });
+
+   
     cardDivEl.classList.add('card--active');
     textDivEl.style.display = 'block';
+
+
+   
 
     // // Výška a šířka viewportu
      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
@@ -112,5 +119,6 @@ const overlay = document.querySelector('.overlay');
 overlay.addEventListener('click', function () {
     closeActiveCard();
     overlay.style.display = 'none';
+    overlay.style.opacity = '0'
 
 });

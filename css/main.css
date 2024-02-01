@@ -43,8 +43,9 @@
 }
 
 .description-color {
-  color: #a4bb61;
+  color: #819e2b;
   margin: 0 10px;
+  font-weight: 700;
 }
 
 .footer {
@@ -133,7 +134,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: grey;
+  background-color: rgb(181, 181, 181);
 }
 
 h1, h2, h3 {
@@ -176,7 +177,7 @@ h1, h2, h3 {
   display: block;
   width: 100px;
   border: 0;
-  background-color: lightgrey;
+  background-color: rgb(220, 220, 220);
   font-family: "Sorts Mill Goudy", serif;
   font-size: 1rem;
   cursor: pointer;
@@ -186,28 +187,28 @@ h1, h2, h3 {
   color: black;
 }
 .button--new-recipe {
-  background-color: #a4bb61;
+  background-color: #819e2b;
 }
 .button:hover {
-  background-color: #a0a0a0;
+  background-color: darkgray;
   color: white;
 }
 .button:hover .button__link {
   color: white;
 }
 .button--header {
-  background-color: #a4bb61;
+  background-color: #819e2b;
 }
 .button--header:hover {
-  background-color: #6d7f37;
+  background-color: #404e15;
 }
 
 .button--new-recipe:hover {
-  background-color: #6d7f37;
+  background-color: #404e15;
 }
 
 .card {
-  background-color: lightgrey;
+  background-color: rgb(220, 220, 220);
   border-radius: 20px;
   margin-bottom: 3rem;
 }
@@ -226,7 +227,7 @@ h1, h2, h3 {
   margin: 1.5rem;
 }
 .card__title--menu {
-  background-color: #a4bb61;
+  background-color: #819e2b;
   padding: 1.5rem;
   margin: 0;
   border-radius: 20px 20px 0 0;

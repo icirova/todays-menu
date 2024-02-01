@@ -10,7 +10,7 @@
 
     @include mixins.display-med{
       
-        padding: variables.$double-spacer;
+        // padding: variables.$double-spacer;
     }
     
     &__container {
@@ -25,6 +25,9 @@
         margin-bottom: 20px;
        
         font-family: variables.$subtitle-font;
+        @include mixins.display-med{
+            margin-bottom: 0;
+           }
         
         @include mixins.display-lg {
             font-size: 1.2rem;
@@ -33,8 +36,17 @@
     }
 
     &__title {
-       @include mixins.margin-bottom;
+
+       
+       margin: 20px auto;
+       text-align: center;
+    
        font-size: 3rem;
+
+       @include mixins.display-med{
+        margin: 0;
+        font-size: 4rem;
+       }
 
        @include mixins.display-lg {
         font-size: 6rem;
@@ -43,16 +55,16 @@
     }
 
     
-    &__image {
-        display: none;
-        @include mixins.display-med{
-            display: block;
-            width: 80%;
-            margin: 0 auto;
-            border-radius: 50%;
+    // &__image {
+    //     display: none;
+    //     @include mixins.display-med{
+    //         display: block;
+    //         width: 80%;
+    //         margin: 0 auto;
+    //         border-radius: 50%;
             
-        }
-    }
+    //     }
+    // }
 }
 
 .description-color{
@@ -60,3 +72,10 @@
     margin: 0 10px;
     font-weight: 700;
 }
+
+.buttons--header {
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+

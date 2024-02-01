@@ -1,11 +1,6 @@
 .header {
   padding: 15px;
 }
-@media screen and (min-width: 680px) {
-  .header {
-    padding: 3rem;
-  }
-}
 @media screen and (min-width: 1024px) {
   .header__container {
     max-width: 80vw;
@@ -16,29 +11,30 @@
   margin-bottom: 20px;
   font-family: "Sorts Mill Goudy", serif;
 }
+@media screen and (min-width: 680px) {
+  .header__description {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1024px) {
   .header__description {
     font-size: 1.2rem;
   }
 }
 .header__title {
-  margin-bottom: 3rem;
+  margin: 20px auto;
+  text-align: center;
   font-size: 3rem;
+}
+@media screen and (min-width: 680px) {
+  .header__title {
+    margin: 0;
+    font-size: 4rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .header__title {
     font-size: 6rem;
-  }
-}
-.header__image {
-  display: none;
-}
-@media screen and (min-width: 680px) {
-  .header__image {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 50%;
   }
 }
 
@@ -46,6 +42,11 @@
   color: #819e2b;
   margin: 0 10px;
   font-weight: 700;
+}
+
+.buttons--header {
+  margin-bottom: 0;
+  background-color: transparent;
 }
 
 .footer {
@@ -59,7 +60,6 @@
   .header__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
 .header__text {
@@ -67,6 +67,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 680px) {
+  .header__text {
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+  }
 }
 .header__img {
   flex-basis: 50%;
@@ -120,6 +127,15 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
+}
+
+.buttons--header {
+  gap: 25px;
+}
+@media screen and (min-width: 680px) {
+  .buttons--header {
+    justify-content: end;
+  }
 }
 
 html {
@@ -186,6 +202,9 @@ h1, h2, h3 {
   text-decoration: none;
   color: black;
 }
+.button__link--header {
+  font-weight: 700;
+}
 .button--new-recipe {
   background-color: #819e2b;
 }
@@ -197,14 +216,21 @@ h1, h2, h3 {
   color: white;
 }
 .button--header {
-  background-color: #819e2b;
+  padding: 0;
+  background-color: rgb(181, 181, 181);
+  text-align: start;
+  width: auto;
 }
 .button--header:hover {
-  background-color: #404e15;
+  background-color: transparent;
 }
 
 .button--new-recipe:hover {
   background-color: #404e15;
+}
+
+.buttons--header {
+  margin-bottom: 0;
 }
 
 .card {
@@ -227,8 +253,7 @@ h1, h2, h3 {
   margin: 1.5rem;
 }
 .card__title--menu {
-  background-color: #819e2b;
-  padding: 1.5rem;
+  padding-top: 0.75rem;
   margin: 0;
   border-radius: 20px 20px 0 0;
 }
@@ -291,7 +316,12 @@ h1, h2, h3 {
   }
 }
 
-.buttons {
+.card__image--menu {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.buttons--recipes {
   margin-bottom: 3rem;
 }
 

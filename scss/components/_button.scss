@@ -12,6 +12,11 @@
     &__link {
         text-decoration: none;
         color: black;
+        
+
+        &--header {
+            font-weight: 700;
+        }
        
     }
 
@@ -29,17 +34,26 @@
     }
 
     &--header{
-       
-        background-color: variables.$color-complementary;
+        padding: 0;
+        background-color: variables.$color-secondary;
+        text-align: start;
+        width: auto
       
     }
 
     &--header:hover{
-        background-color: darken(variables.$color-complementary, 20%);
+        background-color: transparent;
     }
 }
 
 .button--new-recipe:hover {
     background-color: darken(variables.$color-complementary, 20%);
 }
+
+.buttons--header {
+    margin-bottom: 0;
+    
+}
+
+
 

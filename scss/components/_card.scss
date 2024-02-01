@@ -31,8 +31,9 @@
     }
     
     &__title--menu {
-        background-color: variables.$color-complementary;
-        padding: variables.$spacer; 
+       
+        // background-color: white;
+        padding-top: variables.$half-spacer; 
         margin: 0;
         border-radius: 20px 20px 0 0;
     }
@@ -118,3 +119,10 @@
         height: 300px;
     }
 }  
+
+.card__image--menu {
+   width: 100%;
+    
+    
+    border-radius: 20px 20px 0 0 ;
+}

@@ -2,7 +2,7 @@
 @use '../abstracts/mixins';
 
 
-.buttons {
+.buttons--recipes {
     @include mixins.margin-bottom;
 }
 

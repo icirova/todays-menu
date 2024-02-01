@@ -28,9 +28,17 @@
 
 
 .section--grid {
+
+
+
     @include mixins.display-med {
         display: flex;
         flex-wrap: wrap;
+        
+    }
+
+    @include mixins.display-lg {
+        column-gap: variables.$spacer;
     }
 
 }

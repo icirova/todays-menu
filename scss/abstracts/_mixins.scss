@@ -1,7 +1,7 @@
 @use '../abstracts/variables';
 
 @mixin margin-bottom {
-    margin-bottom: variables.$spacer;
+    margin-bottom: variables.$double-spacer;
 }
 
 @mixin padding {

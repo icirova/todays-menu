@@ -2,6 +2,9 @@
 @use '../abstracts/mixins';
 
 .button {
+    border: black solid 5px;
+
+    border-radius: 10px;
     @include mixins.padding-2dim;
     @include mixins.button;
    
@@ -9,10 +12,11 @@
     &__link {
         text-decoration: none;
         color: black;
+       
     }
 
     &--new-recipe {
-        background-color: variables.$color-secondary;
+        background-color:variables.$color-complementary;
     } 
     
     &:hover {
@@ -23,9 +27,19 @@
     &:hover .button__link {
         color: white;
     }
+
+    &--header{
+       
+        background-color: variables.$color-complementary;
+      
+    }
+
+    &--header:hover{
+        background-color: darken(variables.$color-complementary, 20%);
+    }
 }
 
 .button--new-recipe:hover {
-    background-color: darken(variables.$color-secondary, 20%);
+    background-color: darken(variables.$color-complementary, 20%);
 }
 

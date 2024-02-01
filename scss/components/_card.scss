@@ -3,6 +3,9 @@
 
 .card {
 
+    background-color: variables.$color-primary;
+    border-radius: 20px;
+
     @include mixins.margin-bottom;
 
     @include mixins.display-med{
@@ -16,19 +19,28 @@
             margin-right: 0;
         }
       
-        &:nth-child(3n+2) {
-            margin: 0 variables.$spacer
-        };
+        // &:nth-child(3n+2) {
+        //     margin: 0 variables.$spacer
+        // };
     }
 
     &__title {
         text-align: center;
-        @include mixins.margin-bottom;   
-    } 
+        margin: variables.$spacer; 
+          
+    }
+    
+    &__title--menu {
+        background-color: variables.$color-complementary;
+        padding: variables.$spacer; 
+        margin: 0;
+        border-radius: 20px 20px 0 0;
+    }
 
     &__content {
-        border: 1px solid black;
+        // border: 1px solid black;
         @include mixins.padding;
+        
     }
 
     &__text {
@@ -42,6 +54,7 @@
         //rozložení textu ve zvětšené kartičce
         &--recipes {
             display: block;
+            padding: variables.$spacer;
         }
     }
 
@@ -49,11 +62,11 @@
         font-weight: 700;
         font-size: 1.1rem;
         font-family: variables.$subtitle-font;
-        color: variables.$color-primary; 
+         
     }
 
     &__description {
-        margin-left: 8px;
+        // margin-left: 8px;
     }
 
     &__img {
@@ -67,12 +80,13 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 20px 20px 0 0;
     }
 
     //styly aktivní karty
 
     &--active {
-        padding: variables.$spacer;
+       
         width: 80vw;
         height: auto;
         background-color: white;

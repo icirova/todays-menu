@@ -1,0 +1,66 @@
+---
+layout: layouts/main-template.njk
+title: Recepty
+---
+
+
+
+<h1 class="title formular__nadpis">Nový recept</h1>
+
+<div class="section--form">
+    <img class="formular__img" src="/images/form.webp" alt="">
+
+<form id="formular-pridani" class="formular">
+    
+    <div class="formular__polozka">
+      <label for="nazev" class="formular__label">
+        Název
+      </label>
+      <input type="text" id="nazev" required class="formular__input" />
+    </div>
+    <div class="formular__polozka formular__polozka--2">
+      <div>
+       
+      </div>
+      <div>
+       
+      </div>
+    </div>
+    <div class="formular__polozka">
+      <label for="ingredience" class="formular__label">
+        Suroviny
+      </label>
+      <textarea
+        id="ingredience"
+        required
+        class="formular__input formular__textarea"
+      ></textarea>
+    </div>
+    <div class="formular__polozka">
+      <label for="postup" class="formular__label">
+        Postup
+      </label>
+      <textarea
+        id="postup"
+        required
+        class="formular__input formular__textarea"
+      ></textarea>
+    </div>
+    <div class="formular__polozka">
+      <label for="obrazek" class="formular__label">
+        Adresa obrázku
+      </label>
+      <input
+        type="url"
+        id="obrazek"
+        placeholder=""
+        required
+        class="formular__input"
+      />
+    </div>
+    <div class="formular__button--div">
+      <button class="button button--new-recipe">Vytvořit</button>
+    </div>
+  </form>
+
+</div>

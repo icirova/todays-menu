@@ -30,12 +30,12 @@
     }
 
     &:hover .button__link {
-        color: white;
+        color: white
     }
 
     &--header{
         padding: 0;
-        background-color: variables.$color-secondary;
+        background-color: variables.$color-primary;
         text-align: start;
         width: auto
       
@@ -43,6 +43,7 @@
 
     &--header:hover{
         background-color: transparent;
+        
     }
 }
 

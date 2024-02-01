@@ -3,7 +3,7 @@
 
 .card {
 
-    background-color: variables.$color-primary;
+    background-color: variables.$color-secondary;
     border-radius: 20px;
 
     @include mixins.margin-bottom;

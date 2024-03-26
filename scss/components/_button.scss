@@ -12,10 +12,18 @@
     &__link {
         text-decoration: none;
         color: black;
+
+       
         
 
         &--header {
             font-weight: 700;
+
+
+        }
+
+        &:hover{
+        color:white
         }
        
     }
@@ -29,9 +37,7 @@
         color: white;
     }
 
-    &:hover .button__link {
-        color: white
-    }
+   
 
     &--header{
         padding: 0;
@@ -56,5 +62,13 @@
     
 }
 
+
+.button__link--active {
+    color: variables.$color-complementary;
+}
+
+.button__link--header:hover{
+    color:variables.$color-complementary
+}
 
 

@@ -205,14 +205,14 @@ h1, h2, h3 {
 .button__link--header {
   font-weight: 700;
 }
+.button__link:hover {
+  color: white;
+}
 .button--new-recipe {
   background-color: #819e2b;
 }
 .button:hover {
   background-color: darkgray;
-  color: white;
-}
-.button:hover .button__link {
   color: white;
 }
 .button--header {
@@ -231,6 +231,14 @@ h1, h2, h3 {
 
 .buttons--header {
   margin-bottom: 0;
+}
+
+.button__link--active {
+  color: #819e2b;
+}
+
+.button__link--header:hover {
+  color: #819e2b;
 }
 
 .card {

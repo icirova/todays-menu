@@ -8,11 +8,11 @@
 
         <div class="header__text">
            
-            <p class="header__description">plánuj <span class="description-color">&</span> nakupuj <span class="description-color">&</span> uvař</p>
+            <!-- <p class="header__description">plánuj <span class="description-color">&</span> nakupuj <span class="description-color">&</span> uvař</p> -->
             <div class="buttons buttons--header">
-                <button class="button button--header"><a class="button__link button__link--header" href="/#/">Menu</a></button>
-                <button class="button button--header"><a class="button__link button__link--header" href="/recipes/">Recepty</a></button>
-                <button class="button button--header"><a class="button__link button__link--header" href="/recipe-form/">Vytvořit</a></button>    
+                <button class="button button--header "><a class="button__link button__link--header {{ 'button__link--active' if page.fileSlug === '' }}" href="/">Menu</a></button>
+                <button class="button button--header"><a class="button__link button__link--header {{ 'button__link--active' if page.fileSlug === 'recipes' }}" href="/recipes/">Recepty</a></button>
+                <button class="button button--header"><a class="button__link button__link--header {{ 'button__link--active' if page.fileSlug === 'recipe-form' }}" href="/recipe-form/">Vytvořit</a></button>    
             </div>
         </div>
 
